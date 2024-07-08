@@ -1,6 +1,6 @@
 # SwiftTalk Chat Application
 
-SwiftTalk is a real-time chat application built using Firebase as the backend. This app allows users to create accounts, log in, send messages, and receive real-time updates.
+SwiftTalk is a real-time chat application built using JavaScript in the frontend and Firebase as the backend. This app allows users to create accounts, log in, send messages, and receive real-time updates.
 
 ## Features
 
