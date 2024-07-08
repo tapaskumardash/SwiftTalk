@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>SwiftTalk</title>
+</head>
+<body>
+  <!-- Login Area -->
+  <div id="login-area">
+    <div class="login-card">
+      <i class='bx bx-message-square-dots'></i>
+      <span>Welcome to SwiftTalk</span>
+      
+      <div class="login-username-container login-sub-container">
+        <input type="text" placeholder="Username" id="username" class="login-field">
+        <p id="username-error-message"></p>
+      </div>
+      
+      <div class="login-password-container login-sub-container">
+        <input type="password" placeholder="Password" id="password" class="login-field">
+        <p id="password-error-message"></p>
+      </div>
+      
+      <a id="login-button">Login</a>
+    </div>
+    <p class="login-instruction-message">Please log in, even if you don't have an account. Your account will be created automatically.</p>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <i class='bx bx-message-square-dots'></i>
+        <span>SwiftTalk</span>
+      </div>
+      <div class="option">
+        <i class='bx bx-dots-vertical-rounded'></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Option Container -->
+  <div class="option-container">
+    <ul>
+      <li id="clear-chat-option">Clear chat</li>
+      <li id="about-app-option">About this app</li>
+      <li id="contact-us-option">Contact us</li>
+      <li id="logout-option">Logout</li>
+    </ul>
+  </div>
+
+  <!-- Chat Area -->
+  <div id="chat-area">
+    <div id="chat-loading"><i class='bx bx-loader-alt'></i></div>
+  </div>
+
+  <!-- Prompt Area -->
+  <div class="prompt-area">
+    <input type="text" id="prompt" placeholder="Message">
+    <i class='bx bxs-send' id="send"></i>
+  </div>
+
+  <!-- About Area -->
+  <div id="about-area" class="">
+    <i class='bx bx-message-square-dots'></i>
+    <span>SwiftTalk</span>
+    <p>Welcome to SwiftTalk, your go-to chat app for seamless communication. With a user-friendly interface and robust functionality, SwiftTalk allows you to effortlessly create an account and start chatting with friends, family, or colleagues. Powered by HTML, CSS, and JavaScript on the frontend, and Firebase on the backend, our platform ensures reliability and security.</p>
+    <p>Stay tuned as we continue to add more exciting features to enhance your chatting experience. Thank you for choosing SwiftTalk!</p>
+    <p class="developer-credit">Crafted by Tapas Kumar Dash</p>
+    <a id="about-close-button"><i class='bx bx-arrow-back'></i>Back to Home</a>
+  </div>
+
+  <!-- Contact Area -->
+  <div id="contact-area" class="">
+    <div class="form-box">
+      <i class='bx bx-message-square-dots'></i>
+      <span>Contact Me!</span>
+      <input type="text" placeholder="Full name" id="contact-name">
+      <input type="email" placeholder="Email" id="contact-email">
+      <textarea placeholder="Message" id="contact-message"></textarea>
+      <p id="contact-area-alert-msg"></p>
+      <a id="contact-send">Send</a>
+    </div>
+    <a id="contact-close-button"><i class='bx bx-arrow-back'></i>Back to Home</a>
+    <p class="developer-credit">Crafted by Tapas Kumar Dash</p>
+  </div>
+
+  <!-- Offline Area -->
+  <div id="offline-area">
+    <i class='bx bx-wifi-off'></i>
+    <span>No internet!</span>
+    <button id="retry-button">Retry</button>
+  </div>
+  
+  <script type="module" src="app.js"></script>
+</body>
+</html>
