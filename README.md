@@ -19,6 +19,3 @@ SwiftTalk is a real-time chat application built using JavaScript in the frontend
 - Node.js and npm installed.
 - HTML, CSS, JavaScript
 - Firebase account and project setup.
-
-### Installation
-**Clone the repository:
